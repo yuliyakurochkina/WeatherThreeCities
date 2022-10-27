@@ -1,18 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="#004D40"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RadioGroup
+        android:id="@+id/radioBtnForCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        app:srcCompat="@drawable/image_rain_mwt" />
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tvFeels_like"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tvWindSpeed"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tvWindDir"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tvHumidity"
+        android:layout_width="300dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="145dp">
+
+        <RadioButton
+            android:id="@+id/select_moscow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@android:dimen/app_icon_size"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/moscow1"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/select_sochi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@android:dimen/app_icon_size"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/sochi1"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/select_samara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@android:dimen/app_icon_size"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/samara1"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvChooseTheCity"
+        android:gravity="center"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
