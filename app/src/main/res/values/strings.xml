@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">WeatherThreeCities</string>
+    <string name="app_name">MyWeatherToday</string>
+    <string name="title">Hello! What\'s the weather like today?</string>
+    <string name="moscow1">Moscow</string>
+    <string name="sochi1">Sochi</string>
+    <string name="samara1">Samara</string>
+    <string name="textviewForWeather">TextView</string>
+    <string name="info_about_wind">I want to know info about wind now!</string>
+    <string name="btnBack">Back</string>
+    <string name="tvChooseTheCity">Select a city above to check the weather now...</string>
+
 </resources>
