@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
 
     private val viewModel: MainScreenViewModel by viewModels()
     private val tvTemperature: TextView by lazy { findViewById(R.id.tvTemperature) }
-    private val windSpeed: TextView by lazy { findViewById(R.id.tvWindSpeed) }
-    private val windDir: TextView by lazy { findViewById(R.id.tvWindDir) }
+    private val tvWindSpeed: TextView by lazy { findViewById(R.id.tvWindSpeed) }
+    private val tvWindDir: TextView by lazy { findViewById(R.id.tvWindDir) }
     private val tvFeels_like: TextView by lazy { findViewById(R.id.tvFeels_like) }
     private val tvHumidity: TextView by lazy { findViewById(R.id.tvHumidity) }
 
@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun render(viewState: ViewState) {
         tvTemperature.text = "Now the temperature is ${viewState.currentList.temperature} C."
-        windSpeed.text = "Wind speed is ${viewState.currentList.speed} kph."
-        windDir.text = "Wind direction is ${viewState.currentList.wind_dir}."
+        tvWindSpeed.text = "Wind speed is ${viewState.currentList.speed} kph."
+        tvWindDir.text = "Wind direction is ${viewState.currentList.wind_dir}."
         tvFeels_like.text = "Feels like ${viewState.currentList.feelslike_C} C."
         tvHumidity.text = "The humidity is ${viewState.currentList.humidity} %."
     }
