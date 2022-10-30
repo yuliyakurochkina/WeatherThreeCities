@@ -22,48 +22,50 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0" />
 
-    <RadioGroup
-        android:id="@+id/radioBtnForCity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="275dp"
         app:srcCompat="@drawable/image_rain_mwt" />
 
-    <TextView
-        android:id="@+id/tvTemperature"
-        style="@style/TextAppearance.AppCompat.Medium"
-        android:layout_width="300dp"
+    <RadioGroup
+        android:id="@+id/radioBtnForCity"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center" />
+        android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/tvFeels_like"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/tvTemperature"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
 
-    <TextView
-        android:id="@+id/tvWindSpeed"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/tvFeels_like"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
 
-    <TextView
-        android:id="@+id/tvWindDir"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/tvWindSpeed"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
 
-    <TextView
-        android:id="@+id/tvHumidity"
-        android:layout_width="300dp"
-        android:layout_height="26dp"
-        android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/tvWindDir"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tvHumidity"
+            android:layout_width="300dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center" />
+
+    </RadioGroup>
 
     <RadioGroup
         android:layout_width="match_parent"
